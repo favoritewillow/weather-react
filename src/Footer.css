@@ -1,0 +1,10 @@
+.Footer {
+  background: rgb(184 201 195);
+  border: 1px solid rgb(16 30 38);
+  border-radius: 30px;
+  color: black;
+  font-size: 14px;
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
+}
