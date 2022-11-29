@@ -18,34 +18,34 @@ body {
   line-height: 1.5;
 }
 
-h1,
-h2 {
+.App h1,
+.App h2 {
   font-size: 35px;
   font-weight: bold;
   line-height: 2;
   text-align: center;
 }
 
-h3 {
+.App h3 {
   font-size: 20px;
   text-align: center;
 }
 
-a {
+.App a {
   color: #e65c0d;
   text-decoration: none;
 }
 
-a:hover {
+.App a:hover {
   color: #a74005;
   text-decoration: none;
 }
 
-li {
+.App li {
   list-style-type: none;
 }
 
-.container {
+.App .container {
   background: rgb(130 173 182);
   background-image: url("../images/sky-grass.jpg");
   background-position: center;

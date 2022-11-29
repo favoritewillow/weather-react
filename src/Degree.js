@@ -15,20 +15,22 @@ export default function Degree(props) {
   }
 
   return (
-    <div className="weather-temperature">
-      <h1>{props.city}</h1>
-      <h2>
-        <span>{temperature}</span>
-        <span>
-          <a href="/" className="active" onClick={showCelsius}>
-            °C
-          </a>
-          /
-          <a href="/" className="active" onClick={showFahrenheit}>
-            °F
-          </a>
-        </span>
-      </h2>
+    <div className="Degree">
+      <div className="weather-temperature">
+        <h1>{props.city}</h1>
+        <h2>
+          <span>{temperature}</span>
+          <span>
+            <a href="/" className="active" onClick={showCelsius}>
+              °C
+            </a>
+            /
+            <a href="/" className="active" onClick={showFahrenheit}>
+              °F
+            </a>
+          </span>
+        </h2>
+      </div>
     </div>
   );
 }

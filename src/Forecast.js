@@ -15,33 +15,35 @@ export default function Forecast() {
   };
 
   return (
-    <div className="input-data">
-      <div className="row city-temperature align-items-center">
-        <div className="col">
-          <Degree city="Kyiv" temperature={20} />
+    <div className="Forecast">
+      <div className="input-data">
+        <div className="row city-temperature align-items-center">
+          <div className="col">
+            <Degree city="Kyiv" temperature={20} />
+          </div>
+          <div className="col icon">
+            <img src={forecastData.imgUrl} alt="" width="200" id="icon" />
+          </div>
+          <div className="col info-day">
+            <ul className="humidity-wind">
+              <li className="description">{forecastData.description}</li>
+              <li>
+                Last update:
+                <br />
+                <span className="lastUpdate">{forecastData.date}</span>
+              </li>
+              <li>
+                Humidity:{" "}
+                <span className="humidity">{forecastData.humidity}</span> %
+              </li>
+              <li>
+                Wind: <span className="wind">{forecastData.wind}</span> m/s
+              </li>
+            </ul>
+          </div>
         </div>
-        <div className="col icon">
-          <img src={forecastData.imgUrl} alt="" width="200" id="icon" />
-        </div>
-        <div className="col info-day">
-          <ul className="humidity-wind">
-            <li className="description">{forecastData.description}</li>
-            <li>
-              Last update:
-              <br />
-              <span className="lastUpdate">{forecastData.date}</span>
-            </li>
-            <li>
-              Humidity:{" "}
-              <span className="humidity">{forecastData.humidity}</span> %
-            </li>
-            <li>
-              Wind: <span className="wind">{forecastData.wind}</span> m/s
-            </li>
-          </ul>
-        </div>
+        <div className="weather-forecast"></div>
       </div>
-      <div className="weather-forecast"></div>
     </div>
   );
 }

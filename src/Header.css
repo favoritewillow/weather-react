@@ -1,36 +1,36 @@
-.currentDay,
-.currentDate {
+.Header .currentDay,
+.Header .currentDate {
   font-size: 15px;
   font-weight: bold;
 }
 
-.input-group {
+.Header .input-group {
   margin: 10px 10px;
 }
 
-.form-control {
+.Header .form-control {
   border: 1px solid rgb(16 30 38);
 }
 
-.btn-outline-secondary {
+.Header .btn-outline-secondary {
   background: rgb(110 159 173);
   border: 1px solid rgb(16 30 38);
   padding: 8px 10px;
 }
 
-.btn-outline-secondary:hover {
+.Header .btn-outline-secondary:hover {
   background: rgb(70 131 152);
   border: 1px solid rgb(70 131 152);
 }
 
-.fa-magnifying-glass {
+.Header .fa-magnifying-glass {
   color: black;
 }
-.fa-location-dot {
+.Header .fa-location-dot {
   color: red;
 }
 
-.variable-data {
+.Header .variable-data {
   margin: 0 auto;
   padding: 0px;
   text-align: center;
