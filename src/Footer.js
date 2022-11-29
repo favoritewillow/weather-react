@@ -14,7 +14,7 @@ export default function Footer() {
       </a>
       and
       <a
-        href="https://incandescent-gecko-cc3f4d.netlify.app"
+        href="https://venerable-kleicha-5e602b.netlify.app"
         target="_blank"
         rel="noreferrer"
       >
