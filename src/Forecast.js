@@ -1,15 +1,15 @@
 import React, { useState } from "react";
 import "./Forecast.css";
-import Degree from "./Degree";
-import FormatDate from "./FormatDate";
 import FormatDay from "./FormatDay";
 import FormatFullData from "./FormatFullData";
+import WeatherInfo from "./WeatherInfo";
 import axios from "axios";
 
 export default function Forecast(props) {
   const [weatherData, setWeatherData] = useState({ ready: false });
 
   function handleResponse(response) {
+    console.log(response.date);
     setWeatherData({
       ready: true,
       city: response.data.name,
@@ -52,39 +52,7 @@ export default function Forecast(props) {
             </form>
           </div>
         </div>
-        <div className="input-data">
-          <div className="row city-temperature align-items-center">
-            <div className="col">
-              <Degree
-                city={weatherData.city}
-                temperature={Math.round(weatherData.temperature)}
-              />
-            </div>
-            <div className="col icon">
-              <img src={weatherData.icon} alt="" width="200" id="icon" />
-            </div>
-            <div className="col info-day">
-              <ul className="humidity-wind">
-                <li className="description">{weatherData.description}</li>
-                <li>
-                  Last update:
-                  <br />
-                  <span className="lastUpdate">
-                    <FormatDate date={weatherData.date} />
-                  </span>
-                </li>
-                <li>
-                  Humidity:{" "}
-                  <span className="humidity">{weatherData.humidity}</span> %
-                </li>
-                <li>
-                  Wind: <span className="wind">{weatherData.wind}</span> m/s
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div className="weather-forecast"></div>
-        </div>
+        <WeatherInfo data={weatherData} />
       </div>
     );
   } else {
