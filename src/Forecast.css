@@ -1,3 +1,40 @@
+.Forecast .currentDay,
+.Forecast .currentDate {
+  font-size: 15px;
+  font-weight: bold;
+}
+.Forecast .input-group {
+  margin: 10px 10px;
+}
+
+.Forecast .form-control {
+  border: 1px solid rgb(16 30 38);
+}
+
+.Forecast .btn-outline-secondary {
+  background: rgb(110 159 173);
+  border: 1px solid rgb(16 30 38);
+  padding: 8px 10px;
+}
+
+.Forecast .btn-outline-secondary:hover {
+  background: rgb(70 131 152);
+  border: 1px solid rgb(70 131 152);
+}
+
+.Forecast .fa-magnifying-glass {
+  color: black;
+}
+.Forecast .fa-location-dot {
+  color: red;
+}
+
+.Forecast .variable-data {
+  margin: 0 auto;
+  padding: 0px;
+  text-align: center;
+}
+
 .Forecast .description:first-letter {
   text-transform: capitalize;
 }
