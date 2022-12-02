@@ -7,7 +7,7 @@ export default function WeatherInfo(props) {
     <div className="input-data">
       <div className="row city-temperature align-items-center">
         <div className="col">
-          <Degree city={props.data.city} temperature={props.data.temperature} />
+          <Degree cityName={props.data.city} celsius={props.data.temperature} />
         </div>
         <div className="col icon">
           <img src={props.data.icon} alt="" width="200" id="icon" />

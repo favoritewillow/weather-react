@@ -10,15 +10,17 @@ export default function Footer() {
         target="_blank"
         rel="noreferrer"
       >
+        {" "}
         open-sourced code on GitHub
-      </a>
-      and
+      </a>{" "}
+      and{" "}
       <a
         href="https://venerable-kleicha-5e602b.netlify.app"
         target="_blank"
         rel="noreferrer"
       >
-        hosted on Netlify
+        {" "}
+        hosted on Netlify{" "}
       </a>
     </p>
   );
