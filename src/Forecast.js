@@ -3,6 +3,7 @@ import "./Forecast.css";
 import FormatDay from "./FormatDay";
 import FormatFullData from "./FormatFullData";
 import WeatherInfo from "./WeatherInfo";
+import ForecastFiveDay from "./ForecastFiveDay";
 import axios from "axios";
 
 export default function Forecast(props) {
@@ -10,9 +11,10 @@ export default function Forecast(props) {
   const [city, setCity] = useState(props.defaultCity);
 
   function handleResponse(response) {
-    //alert(response.data.main.temp);
+    console.log(response.data.coord);
     setWeatherData({
       ready: true,
+      coordinates: response.data.coord,
       city: response.data.name,
       date: new Date(response.data.dt * 1000) /*last update*/,
       description: response.data.weather[0].description,
@@ -22,7 +24,7 @@ export default function Forecast(props) {
       wind: response.data.wind.speed,
     });
   }
-  //`https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
+
   function handleSubmit(event) {
     event.preventDefault();
     search();
@@ -69,7 +71,12 @@ export default function Forecast(props) {
             </form>
           </div>
         </div>
-        <WeatherInfo data={weatherData} />
+        <div className="input-data">
+          <WeatherInfo data={weatherData} />
+          <div className="weather-forecast">
+            <ForecastFiveDay coordinates={weatherData.coordinates} />
+          </div>
+        </div>
       </div>
     );
   } else {
