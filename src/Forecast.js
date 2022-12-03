@@ -55,18 +55,16 @@ export default function Forecast(props) {
             <form onSubmit={handleSubmit}>
               <div className="input-group">
                 <input
-                  type="text"
+                  type="search"
                   className="form-control"
                   placeholder="Type a city ..."
-                  aria-label="Type a city ... with two button addons"
                   onChange={handleCityChange}
                 />
-                <button className="btn btn-outline-secondary" type="button">
-                  <i className="fa-solid fa-magnifying-glass"></i>
-                </button>
-                <button className="btn btn-outline-secondary" type="button">
-                  <i className="fa-solid fa-location-dot"></i>
-                </button>
+                <input
+                  className="btn btn-outline-secondary"
+                  type="submit"
+                  value="Search"
+                />
               </div>
             </form>
           </div>

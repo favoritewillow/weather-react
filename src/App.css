@@ -31,16 +31,6 @@ body {
   text-align: center;
 }
 
-.App a {
-  color: #e65c0d;
-  text-decoration: none;
-}
-
-.App a:hover {
-  color: #a74005;
-  text-decoration: none;
-}
-
 .App li {
   list-style-type: none;
 }
@@ -62,59 +52,11 @@ body {
   align-items: center;
 }
 
-.city-temperature,
-.five-days {
-  margin: 0 auto;
-  vertical-align: top;
-}
-
-.head {
+.App .weather-temperature .active {
   color: black;
-  display: inline-block;
-  font-size: 18px;
-  margin: 0 auto;
+  cursor: default;
 }
 
-.five-days {
-  border: 1px solid rgb(16 30 38);
-  border-radius: 30px;
-  box-sizing: content-box;
-  display: block;
-  margin: 0 auto;
-  max-width: 110px;
-  padding: 10px 10px;
-  transition: all 200ms ease;
-  opacity: 1;
-}
-
-.five-days:hover {
-  opacity: 0.7;
-}
-
-.day,
-.weather,
-.temperature {
-  line-height: 1;
-  text-align: center;
-}
-
-.weather {
-  font-size: 13px;
-}
-
-.temperature {
-  background: rgb(184 201 195);
-  border-radius: 30px;
-  color: black;
-  font-size: 15px;
-  font-weight: bold;
-  margin: 0 auto;
-  width: 100px;
-  padding: 5px 5px;
-}
-
-.week {
-  margin: 0 auto;
-  padding: 0px;
-  text-align: center;
+.App .weather-temperature .active:hover {
+  cursor: pointer;
 }

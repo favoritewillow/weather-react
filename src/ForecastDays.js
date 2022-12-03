@@ -40,8 +40,7 @@ export default function ForecastDays(props) {
         </li>
         <li className="temperature">
           <span className="maxTemperature">{maxTemprature()}</span>
-          °/
-          <span className="minTemperature">{minTemprature()}</span>°
+          °/ <span className="minTemperature">{minTemprature()}</span>°
         </li>
       </ul>
     </div>

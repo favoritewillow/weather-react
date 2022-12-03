@@ -1,3 +1,14 @@
+.Forecast a {
+  color: #e65c0d;
+  text-decoration: none;
+}
+
+.Forecast a:hover {
+  color: #a74005;
+  text-decoration: none;
+  opacity: 0.5;
+}
+
 .Forecast .currentDay,
 .Forecast .currentDate {
   font-size: 15px;
@@ -11,22 +22,18 @@
   border: 1px solid rgb(16 30 38);
 }
 
+.Forecast .btn {
+  color: black;
+}
+
 .Forecast .btn-outline-secondary {
   background: rgb(110 159 173);
   border: 1px solid rgb(16 30 38);
-  padding: 8px 10px;
 }
 
 .Forecast .btn-outline-secondary:hover {
   background: rgb(70 131 152);
   border: 1px solid rgb(70 131 152);
-}
-
-.Forecast .fa-magnifying-glass {
-  color: black;
-}
-.Forecast .fa-location-dot {
-  color: red;
 }
 
 .Forecast .variable-data {

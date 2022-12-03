@@ -1,3 +1,13 @@
+.Footer a {
+  color: #e65c0d;
+  text-decoration: none;
+}
+
+.Footer a:hover {
+  color: #a74005;
+  text-decoration: none;
+}
+
 .Footer {
   background: rgb(184 201 195);
   border: 1px solid rgb(16 30 38);
