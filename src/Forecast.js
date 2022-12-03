@@ -3,7 +3,7 @@ import "./Forecast.css";
 import FormatDay from "./FormatDay";
 import FormatFullData from "./FormatFullData";
 import WeatherInfo from "./WeatherInfo";
-import ForecastFiveDay from "./ForecastFiveDay";
+import ForecastOneDay from "./ForecastOneDay";
 import axios from "axios";
 
 export default function Forecast(props) {
@@ -11,7 +11,7 @@ export default function Forecast(props) {
   const [city, setCity] = useState(props.defaultCity);
 
   function handleResponse(response) {
-    console.log(response.data.coord);
+    //console.log(response.data.coord);
     setWeatherData({
       ready: true,
       coordinates: response.data.coord,
@@ -74,7 +74,7 @@ export default function Forecast(props) {
         <div className="input-data">
           <WeatherInfo data={weatherData} />
           <div className="weather-forecast">
-            <ForecastFiveDay coordinates={weatherData.coordinates} />
+            <ForecastOneDay coordinates={weatherData.coordinates} />
           </div>
         </div>
       </div>
