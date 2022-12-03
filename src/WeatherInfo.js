@@ -10,7 +10,7 @@ export default function WeatherInfo(props) {
         <Degree cityName={props.data.city} celsius={props.data.temperature} />
       </div>
       <div className="col icons">
-        <WeatherIcon code={props.data.icon} size="150" />
+        <WeatherIcon code={props.data.icon} size={150} />
       </div>
       <div className="col info-day">
         <ul className="humidity-wind">
